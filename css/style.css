@@ -65,6 +65,8 @@ body {
   width: 85%;
   margin: -50px auto;
   position: relative;
+  display: grid;
+  row-gap: 25px;
 }
 
 .proyect {
@@ -122,4 +124,53 @@ body {
 
 .proyect-actions .proyect-bookmark {
   margin: 0;
+}
+
+.information {
+  border: 1px solid rgba(189, 189, 189, .4);
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  color: var(--dark-gray);
+  padding: 10px 10px 30px;
+}
+
+.information-principal {
+  color: var(--black);
+  font-size: 2em;
+  font-weight: bold;
+  margin: 25px 0 0;
+}
+
+.information-principal + p {
+  margin: 10px 0 30px;
+  font-size: .9em;
+  font-weight: 500;
+}
+
+.days,
+.backers  {
+  border-top: 1px solid rgba(122, 122, 122, .5);
+  width: 30%;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  width: 90%;
+  background-color: rgba(122, 122, 122, .1);
+  height: 13px;
+  border-radius: 10px;
+  margin: 0 auto 10px;
+  position: relative;
+}
+
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  background-color: var(--cyan);
+  border-radius: 10px;
 }
