@@ -61,6 +61,7 @@ body {
 }
 
 .main {
+  border: 1px solid red;
   width: 85%;
   margin: -50px auto;
   position: relative;
