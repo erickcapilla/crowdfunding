@@ -12,6 +12,7 @@ body {
   margin: 0;
   font-size: 16px;
   font-family: 'Commissioner', sans-serif;
+  background-color: #fbfbfb;
 }
 
 .header {
@@ -34,9 +35,6 @@ body {
 
 .hero {
   height: 70vh;
-  /* background-image: url(../images/image-hero-mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: contain; */
   position: relative;
 }
 
@@ -60,4 +58,67 @@ body {
   right: 0;
   top: 0;
   background: linear-gradient(rgba(0, 0 , 0, .5), rgba(255, 255, 255, 0));
+}
+
+.main {
+  width: 85%;
+  margin: -50px auto;
+  position: relative;
+}
+
+.proyect {
+  border: 1px solid rgba(189, 189, 189, .4);
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.proyect-logo {
+  position: absolute;
+  top: -13%;
+  right: 30%;
+}
+
+.proyect-description {
+  margin: 30px 0;
+}
+
+.proyect-description .title {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--black)
+}
+
+.proyect-description .description {
+  font-size: .9em;
+  font-weight: 400;
+  color: var(--dark-gray);
+  line-height: 1.7em;
+}
+
+.proyect-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.proyect-btn {
+  background-color: var(--cyan);
+  border: none;
+  border-radius: 25px;
+  padding: 5px 15px;
+  color: white;
+  width: 75%;
+  height: 56px;
+  font-size: .9em;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+.proyect-actions .proyect-bookmark {
+  margin: 0;
 }
