@@ -174,3 +174,29 @@ body {
   background-color: var(--cyan);
   border-radius: 10px;
 }
+
+.about-proyect {
+  border: 1px solid rgba(189, 189, 189, .4);
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+.about-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--black);
+}
+
+.about-description {
+  color: var(--dark-gray);
+  font-size: .85em;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.rewards {
+  border: 1px solid red;
+  display: grid;
+  margin: 35px auto;
+}
