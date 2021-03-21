@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-computer.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="./css/style-tablet.css" media="screen and (min-width: 768px)">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,33 +17,45 @@
         <img src="./images/logo.svg" alt="Crowdfunding Logo">
       </figure>
       <nav class="menu">
-        <figure class="menu-image">
-          <img src="./images/icon-hamburger.svg" alt="Hamburguer menu">
+        <figure class="menu-image" id="menu">
+          <img src="./images/icon-hamburger.svg" id="open" class="menu-open active" alt="Hamburguer menu" />
+          <img src="./images/icon-close-menu.svg" id="close" class="menu-close" alt="Close Hamburguer menu" />
         </figure>
+        <ul class="menu-list">
+          <li class="menu-item">About</li>
+          <li class="menu-item">Discover</li>
+          <li class="menu-item">Get Started</li>
+        </ul>
       </nav>
     </header>
-    <div class="hero">
-      <figure class="hero-image">
-        <img src="./images/image-hero-mobile.jpg" alt="Hero image">
-      </figure>
+    <div class="menu-card" id="menu-card">
+      <p>About</p>
+      <p>Discover</p>
+      <p>Get Started</p>
     </div>
-    <!-- About
-    Discover
-    Get Started -->
+    <div class="hero">
+      <picture class="hero-image">
+        <source media="(min-width: 1024px)" srcset="./images/image-hero-desktop.jpg">
+        <img src="./images/image-hero-mobile.jpg" alt="Hero image">
+      </picture>
+    </div>
     <main class="main">
       <section class="proyect">
         <figure class="proyect-logo">
           <img src="./images/logo-mastercraft.svg" alt="Mastercraft Logo">
         </figure>
         <article class="proyect-description">
-          <p class="title">Mastercraft Bamboo<br>Monitor Riser</p>
+          <p class="title">Mastercraft Bamboo Monitor Riser</p>
           <p class="description">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
         </article>
         <div class="proyect-actions">
           <button class="proyect-btn">Back this project</button>
-          <figure class="proyect-bookmark">
-            <img src="./images/icon-bookmark.svg" alt="Bookmark">
-          </figure>
+          <div class="container-bookmark">
+            <figure class="proyect-bookmark">
+              <img src="./images/icon-bookmark.svg" alt="Bookmark">
+            </figure>
+            <p>Bookmark</p>
+          </div>
         </div>
       </section>
       <section class="information">
@@ -76,37 +90,50 @@
         </article>
         <article class="rewards">
           <div class="reward-card">
-            <p class="card-title">Bamboo Stand</p>
-            <p class="card-price">Pledge $25 or more</p>
+            <div class="container-reward">
+              <p class="card-title">Bamboo Stand</p>
+              <p class="card-price">Pledge $25 or more</p>
+            </div>
             <p class="card-description">
               You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
               you’ll be added to a special Backer member list.
             </p>
-            <p class="left"><strong>101 </strong> left</p>
-            <button class="card-btn">Select Reward</button>
+            <div class="container-btn">
+              <p class="left"><strong>101 </strong> left</p>
+              <button class="card-btn">Select Reward</button>
+            </div>
           </div>
           <div class="reward-card">
-            <p class="card-title">Black Edition Stand</p>
-            <p class="card-price">Pledge $75 or more</p>
+            <div class="container-reward">
+              <p class="card-title">Black Edition Stand</p>
+              <p class="card-price">Pledge $75 or more</p>
+            </div>
             <p class="card-description">
               You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
               member list. Shipping is included.
             </p>
-            <p class="left"><strong>64 </strong> left</p>
-            <button class="card-btn">Select Reward</button>
+            <div class="container-btn">
+              <p class="left"><strong>64 </strong> left</p>
+              <button class="card-btn">Select Reward</button>
+            </div>
           </div>
           <div class="reward-card">
-            <p class="card-title">Mahogany Special Edition</p>
-            <p class="card-price"> Pledge $200 or more</p>
+            <div class="container-reward">
+              <p class="card-title">Mahogany Special Edition</p>
+              <p class="card-price"> Pledge $200 or more</p>
+            </div>
             <p class="card-description">
               You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
               to our Backer member list. Shipping is included.
             </p>
-            <p class="left"><strong>0 </strong> left</p>
-            <button class="card-btn">Out of Stock</button>
+            <div class="container-btn">
+              <p class="left"><strong>0 </strong> left</p>
+              <button class="card-btn">Out of Stock</button>
+            </div>
           </div>
         </article>
       </section>
     </main>
+    <script src="./script/main.js"></script>
   </body>
 </html>
