@@ -1,0 +1,73 @@
+.main {
+  width: 70%;
+}
+
+.menu-list {
+  display: flex;
+  color: white;
+  width: 250px;
+  justify-content: space-between;
+  padding: 0 50px 0 20px;
+}
+
+.menu-item {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.menu-image {
+  display: none;
+}
+
+.container-bookmark {
+  display: flex;
+  border-radius: 30px;
+  align-items: center;
+  color: var(--dark-gray);
+  font-weight: bold;
+  font-size: 1.3em;
+  background-color: rgba(122, 122, 122, .1);
+}
+
+.container-bookmark > p {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.proyect-btn {
+  width: 196px;
+}
+
+.container-reward,
+.container-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-reward > p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.container-reward + p {
+  font-size: 1.1em;
+  line-height: 35px;
+  font-weight: 500;
+}
+
+.about-description {
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.proyect-description .description {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.proyect-description .title {
+  font-size: 1.5em;
+}
